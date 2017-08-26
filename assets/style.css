@@ -10,6 +10,7 @@ html,body{
 	height:100%;
   background:#111;
   margin: 0;
+  font-family: "Open Sans"
 }
 
 html{
@@ -103,7 +104,7 @@ h1.title {
 .overlay {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, .2);
+  background-color: rgba(0, 0, 0, .5);
   position:fixed;
   top:0;
   right:0;
@@ -145,13 +146,20 @@ h1.title {
 
 #modal-btn {
   pointer-events: all;
-  color: #fff;
+  color: #000022;
   text-decoration: none;
   font-size: 22px;
-  padding: 5px 10px;
-  border: 1px solid #fff;
+  padding: 10px 15px;
   border-radius: 10px;
   margin-top: 20px;
+  background-color: #25B690;
+  transition: all .3s;
+}
+
+#modal-btn:hover {
+  background-color: #FAD852;
+  padding: 15px 20px;
+
 }
 
 #mc_embed_signup_scroll {
@@ -195,16 +203,43 @@ h1.title {
   margin-top: 30px;
 }
 
+.description {
+
+}
+
 .copyright {
   position: absolute;
   bottom: 0;
   color: #fff;
   font-size: 13px;
   pointer-events: all;
+  z-index: 999;
 }
 
 .copyright a {
   color: #c1a35a;
   font-weight: 800;
   text-decoration: none;
+}
+
+.red {
+  color: #EC3952;
+}
+
+.blue {
+ color: #4C86C3;
+}
+
+.green {
+  color: #25B690;
+}
+
+.yellow {
+ color: #FAD852;
+}
+
+@media (max-width: 540px) {
+  .tingle-modal {
+    display: flex
+  }
 }
