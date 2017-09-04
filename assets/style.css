@@ -99,6 +99,7 @@ canvas{
   justify-content: center;
   align-items: center;
   z-index: 999;
+  text-align: center;
 }
 
 h1.title {
