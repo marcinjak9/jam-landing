@@ -223,6 +223,8 @@ h1.title {
   pointer-events: all;
   z-index: 999;
   margin: 20px auto;
+  width: 100%;
+  text-align: center;
 }
 
 .copyright img {
